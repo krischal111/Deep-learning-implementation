@@ -12,6 +12,11 @@ And to test the model I've used the MNIST's handwritten dataset.
 
 This was the older model, for more recent model that I tested, please see the following link: [more-recent](recent_model.md)
 
+I ran the model also in the google colab for 200 epochs. The corresponding jupyter notebook is at [notebook](google-colab-200-epoch/deep_learning_complete.ipynb)
+
+The notes (markdown) file is at: [note](google-colab-200-epoch/readme.md)
+
+
 Model's architecture is pretty simple, but it's not the focus. However, for informational purpose, I tested the sort-of-deep-learning framework using following architecture:
 
     1. Flattener                 : (28, 28) to 784

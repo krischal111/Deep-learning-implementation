@@ -1,3 +1,5 @@
+# A run in google colab.
+
 ## Model architecture
 
     Simple MNIST handwritten digit dataset classifier
@@ -28,7 +30,7 @@
 
 Learning rate = 0.01
 
-Number of epochs = 40
+Number of epochs = 200
 
 ### Model's loss graph
 
@@ -42,7 +44,3 @@ Number of epochs = 40
 
 ![Model's output](Output.png)
 
-
-## Want to see what happens if we train for more epochs?
-
-See [this](google-colab-200-epoch/readme.md) for more.
