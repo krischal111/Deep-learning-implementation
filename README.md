@@ -10,6 +10,8 @@ And to test the model I've used the MNIST's handwritten dataset.
 
 ### Test model's architecture
 
+This was the older model, for more recent model that I tested, please see the following link: [more-recent](recent_model.md)
+
 Model's architecture is pretty simple, but it's not the focus. However, for informational purpose, I tested the sort-of-deep-learning framework using following architecture:
 
     1. Flattener                 : (28, 28) to 784
@@ -35,7 +37,7 @@ Model's architecture is pretty simple, but it's not the focus. However, for info
 
 After training on 140 epochs, each epochs consisting of 1000-train datasets, the model's performance can be seen as the image below:
 
-![Moder performance](Output.png)
+![Moder performance](old-Output.png)
 
 ## Part of the implementation of DL
 
@@ -152,11 +154,23 @@ It's really better if the learning rate adapts to the number of test case it see
 
 ### Future works
 
+1. Adding scaling layer:
+
 First, I added the scaling layer, but haven't tested it. Scaling the input to [0, 1] really helped to train faster, when I used the other frameworks to train the MNIST.
+
+- [x] Done
+
+2. More adaptable to list of inputs
 
 Second, I could make the model more adaptable to the list of inputs, rather than a single training example.
 
+I think this is difficult to achieve without breaking the existing functionality.
+
+3. Fixing loss calculation
+
 Third, the loss gradients are working properly, but not the loss function. We don't need the loss functions in training process, but we do need them to see how the models are performing as the training progresses. Stabilizing the loss function would help the situation.
+
+- [x] Done. (But assuming that there is known ground truth, i.e. Ground truth is a single class, it's not a probability distribution over all classes.)
 
 ### Conclusion
 
