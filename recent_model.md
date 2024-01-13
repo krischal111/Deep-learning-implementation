@@ -34,6 +34,10 @@ Number of epochs = 40
 
 ![Model's loss graph](Loss-graph.png)
 
+### Model's accuracy graph
+
+![Model's accuracy graph](Accuracy-graph.png)
+
 ## Model's performance
 
 ![Model's output](Output.png)
